@@ -33,7 +33,7 @@ function Signup(props) {
     }
 
     return (
-        <div className="container" style={{"minHeight":"600px","width":"700px","boxShadow": "5px 5px 10px grey, -5px -5px 10px grey", "borderRadius": "5px"}}>
+        <div className="container" style={{"minHeight":"600px","maxWidth": "700px","boxShadow": "5px 5px 10px grey, -5px -5px 10px grey", "borderRadius": "5px"}}>
         <div className='container' >
             <div className='container' align="center" style={{"paddingTop":"40px","paddingBottom":"20px"}}><h2>Create Account To Use <b><u>MyNoteBook</u></b></h2></div>
 

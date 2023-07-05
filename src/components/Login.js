@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 
 function Login(props) {
     const [cred, setCred] = useState({ email: "", password: "" });
@@ -33,7 +33,7 @@ function Login(props) {
 
 
     return (
-        <div className="container" style={{ "minHeight": "600px", "width": "700px", "boxShadow": "5px 5px 10px grey, -5px -5px 10px grey", "borderRadius": "5px" }}>
+        <div className="container" style={{ "minHeight": "600px", "maxWidth": "700px", "boxShadow": "5px 5px 10px grey, -5px -5px 10px grey", "borderRadius": "5px" }}>
             <div className='container' >
                 <div className='container' align="center" style={{ "paddingTop": "40px", "paddingBottom": "20px" }}>
                     <h2>Login Account To Use <b><u>MyNoteBook</u></b></h2>
@@ -49,6 +49,9 @@ function Login(props) {
                         <input type="password" className="form-control" id="password" name='password' onChange={onChange} minLength={5} required />
                     </div>
                     <button disabled={cred.password.length < 5} type="submit" className="btn btn-primary">Login</button>
+                    <br />
+                    <br />
+                    <p>Don`t have Account, Create One. <Link to="/signup">Click Here!</Link></p>
                 </form>
             </div>
         </div>
