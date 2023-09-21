@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg sticky-top" style={{"background":"#563d7c"}} >
       <div className="container-fluid">
-        <Link className="navbar-brand text-white" to={"/"}><strong>MyNoteBook</strong></Link>
+        <Link className="navbar-brand text-white" to={"/"}><strong>TaskTracker</strong></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

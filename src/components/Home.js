@@ -11,29 +11,20 @@ function Home(props) {
 
   return (
     <>
-
-      <main className="px-3 text-center">
-        <img className='homepage mb-3' src="./homepage.png" alt="khuadu" />
+<div className='home'>
+      <div className="main text-center">
+        <div>
+        <img className='homepage mb-3' src="./homepage.png" alt="khuadu" /></div>
         <h1>Create your Task.</h1>
-        <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p className="lead">
-          <Link to="/notes" className="btn btn-lg btn-light fw-bold border-white bg-white">Create Task Now</Link>
-        </p>
-      </main>
+        <p className='hometext'>TaskTracker is a user-friendly and efficient task management website designed to help you stay organized and on top of your daily activities. Whether you're a professional managing multiple projects or simply trying to keep track of personal tasks, TaskTracker provides you with the tools you need to streamline your workflow.</p>
+        <Link to="/notes" className="btn btn-lg btn-light fw-bold border-white bg-white">Create Task Now</Link>
+      </div>
 
 
 
 
-      <div class="container mt-5">
+      <div class="container mx-2 mt-5">
         <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card" style={card}>
-              <div class="card-body">
-                <h5 class="card-title">About TaskTracker</h5>
-                <p class="card-text">TaskTracker is a user-friendly and efficient task management website designed to help you stay organized and on top of your daily activities. Whether you're a professional managing multiple projects or simply trying to keep track of personal tasks, TaskTracker provides you with the tools you need to streamline your workflow.</p>
-              </div>
-            </div>
-          </div>
 
           <div class="col-md-6 col-lg-4 mb-4">
            <div class="card" style={card}>
@@ -111,6 +102,8 @@ function Home(props) {
 
 
 
+     
+      </div>
       <footer className="mt-auto text-white-50">
         <p>Task Manager Created by <a href="https://www.linkedin.com/in/aditya-pandey-0661881ba/" className="text-white">@Aditya Pandey</a>, <a href="https://github.com/adityapandey-102" className="text-white">(GitHub repo)</a>.</p>
       </footer>

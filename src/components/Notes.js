@@ -91,7 +91,7 @@ function Notes(props) {
   return (
     <>
       <AddNote category={addcategory} refAddButton={refAddButton} />
-      <div className=" text-center mb-3">
+      <div className=" text-center mb-3 mt-4">
         <button type='button' onClick={handleAddNote} className="taskAdd btn p-4 btn-lg btn-light fw-bold border-white bg-white">Create Task Now</button>
       </div>
       <div className="container3">

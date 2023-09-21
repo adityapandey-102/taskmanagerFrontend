@@ -5,6 +5,7 @@ body{
   
   .container3{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
@@ -123,9 +124,39 @@ main{
 }
 
 .homepage{
-  height: 300px;
-  width: 600px;
+  width: 40vh;
+  height: 25vh;
   border-radius: 4px;
   box-shadow:rgba(245, 245, 245, 0.723)  0px 3px 8px;
 
+}
+
+.hometext{
+  padding: 20px;
+}
+
+@media screen and (min-width: 400px) {
+  .homepage{
+    width: 50%;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow:rgba(245, 245, 245, 0.723)  0px 3px 8px;
+  
+  }
+}
+@media screen and (max-width: 400px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 10px;
+  }
+}
+
+
+.home{
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
